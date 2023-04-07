@@ -15,7 +15,7 @@ Welcome to the React and REST workshop, where we'll learn how to create a simple
 
 ## Prerequisites
 
-This workshop uses Dev Containers and GitHub Codespaces, which means all dependencies are pre-installed, and you don't have to worry about the setup.
+This workshop uses [Dev Containers](https://containers.dev/) and [GitHub Codespaces](https://github.com/features/codespaces), which means all dependencies are pre-installed, and you don't have to worry about the setup.
 
 However, in order to utilize GitHub Codespaces, you'll require a GitHub account. You can [sign up by clicking here](https://github.com/signup).
 
@@ -23,7 +23,7 @@ However, in order to utilize GitHub Codespaces, you'll require a GitHub account.
 
 1. Prior to opening the project, ensure you're logged in. If you're not sure, check the top right of this page. If you see [Sign in](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FISU-WebDevClub%2Frest-react-workshop), do that first.
 
-2. Navigate to the top of the page and click "Code" -> "Codespaces" -> "Create codespace on main". This should open a new page and connect you to your codespace. Note that building your environment may take a few minutes. In the mean time, check out the next step!
+2. Navigate to the top of the page and click "Use this template" -> "Open in codespaces". This should open a new page and connect you to your codespace. Note that building your environment may take a few minutes. In the mean time, check out the next step!
 
 3. While you wait, feel free to ask your neighbors why they're in attendance today and what they hope to learn!
 
