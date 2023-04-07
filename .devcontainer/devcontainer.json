@@ -3,14 +3,24 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "postCreateCommand": "npm install",
+  "forwardPorts": [3000, 3001],
+  "portsAttributes": {
+    "3000": {
+      "label": "Initial Application",
+      "onAutoForward": "notify"
+    },
+    "3001": {
+      "label": "Final Application",
+      "onAutoForward": "silent"
+    }
+  },
   "customizations": {
     "codespaces": {
       "openFiles": []
     },
     "vscode": {
-      "extensions": [
-        "esbenp.prettier-vscode"
-      ],
+      "extensions": ["esbenp.prettier-vscode"],
       "settings": {
         "editor.tabSize": 2,
         "editor.formatOnSave": true,
