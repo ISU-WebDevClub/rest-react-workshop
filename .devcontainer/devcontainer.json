@@ -1,0 +1,21 @@
+{
+  "name": "REST Workshop",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
+    }
+  }
+}
