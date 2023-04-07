@@ -1,73 +1,76 @@
-# Turborepo starter
+# React and REST Workshop: Cat Facts
 
-This is an official npm starter turborepo.
+Welcome to the React and REST workshop, where we'll learn how to create a simple web application using React and RESTful APIs. In this workshop, we'll be building two list components: one for listing cat facts retrieved from the Cat Facts API (https://catfact.ninja/facts), and the other for displaying a user's "favorite" cat facts. We'll manage the state in the parent component for both of these lists.
 
-## What's inside?
+## Table of Contents
 
-This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It includes the following packages/apps:
+1. Prerequisites
+2. Opening the Project in GitHub Codespaces
+3. Running Your Development Environment
+4. Hot Reloading
+5. Fetching Cat Facts
+6. Displaying Cat Facts
+7. Favoriting Cat Facts
+8. Final Thoughts
 
-### Apps and Packages
+## Prerequisites
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+This workshop uses Dev Containers and GitHub Codespaces, which means all dependencies are pre-installed, and you don't have to worry about the setup.
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+However, in order to utilize GitHub Codespaces, you'll require a GitHub account. You can [sign up by clicking here](https://github.com/signup).
 
-### Utilities
+## Opening the Project in GitHub Codespaces
 
-This turborepo has some additional tools already setup for you:
+1. Prior to opening the project, ensure you're logged in. If you're not sure, check the top right of this page. If you see [Sign in](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FISU-WebDevClub%2Frest-react-workshop), do that first.
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+2. Navigate to the top of the page and click "Code" -> "Codespaces" -> "Create codespace on main". This should open a new page and connect you to your codespace. Note that building your environment may take a few minutes. In the mean time, check out the next step!
 
-### Build
+3. While you wait, feel free to ask your neighbors why they're in attendance today and what they hope to learn!
 
-To build all apps and packages, run the following command:
+## Running Your Development Environment
 
-```
-cd my-turborepo
-npm run build
-```
+1. Awesome! Now that we're all setup, let's start our development environment. This is a crucial step when working on any programming project.
 
-### Develop
+2. In order to do this, enter the following command in your terminal:
 
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
+```shell
 npm run dev
 ```
 
-### Remote Caching
+## Hot Reloading
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+1. Lucky for us, we don't have to restart our development environment every time we make a change.
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+2. To see this in action, re-open codespaces and navigate to the file `/apps/initial/pages/index.tsx`. This is the core of your React application.
 
+3. Try changing the text! When you're done, hit CTRL + S (this saves the current file). Then, return to your web page and observe your awesome changes!
+
+## Fetching Cat Facts
+
+1. Now that we've familiarized ourselves a little bit with our environment, lets get down to business! First things first, we want to display cat facts... so where are we going to get that data?
+
+2. If you guessed an API, you'd be correct! Today, we'll be using the [Cat Facts API](https://catfact.ninja/facts) provided by [Swagger](https://swagger.io/). Don't be shy, click the [Cat Facts API](https://catfact.ninja/facts) link to get a first hand look at the data model we'll be working with!
+
+3. It's important to note, our data comes in the [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) format. If you aren't familiar, here's a short explanation: JSON is a format for structuring data. There are three main components of the JSON structure: objects, arrays, and primitives (like strings, numbers, and booleans). Here's a detailed example of each:
+
+```json
+{
+  // An object literal. This contains key: value pairs.
+  "myFirstArray": [1, "my first string", true], // An array with three primitive types
+  "myFavoriteNumber": 1, // A number primitive
+  "myFavoriteString": "my favorite string", // A string primitive
+  "myFavoriteBoolean": true // A boolean primitive
+}
 ```
-cd my-turborepo
-npx turbo login
-```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+4. Now, let's jump back into oiur code!
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
+## Final Thoughts
 
-```
-npx turbo link
-```
+If you're curious in learning more, I reckon you look into [Node.js](https://nodejs.org/en/about), the React framework [NextJS](https://nextjs.org/), [Turborepo](https://turbo.build/repo), and [Dev Containers](https://containers.dev/). Fun fact: these are all technologies you used today, you just didn't know it!
 
-## Useful Links
+Moreover, if you have specific questions about what we did today, feel free to reach out to our workshop author [Ryan Huellen](mailto:rhuellen@iastate.edu).
 
-Learn more about the power of Turborepo:
+## Authors
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- [Ryan Huellen](https://www.github.com/ryanhaticus)
