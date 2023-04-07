@@ -63,7 +63,7 @@ npm run dev
 }
 ```
 
-4. Now, let's jump back into oiur code!
+4. Now, let's jump back into our code!
 
 ## Final Thoughts
 
